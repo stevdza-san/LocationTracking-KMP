@@ -1,0 +1,26 @@
+[versions]
+agp = "8.2.2"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+androidx-activityCompose = "1.9.1"
+compose-plugin = "1.6.11"
+kotlin = "2.0.0"
+compass = "1.2.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compass-geolocation = { module = "dev.jordond.compass:geolocation", version.ref = "compass" }
+compass-geolocation-mobile = { module = "dev.jordond.compass:geolocation-mobile", version.ref = "compass" }
+compass-geocoder = { module = "dev.jordond.compass:geocoder", version.ref = "compass" }
+compass-geocoder-mobile = { module = "dev.jordond.compass:geocoder-mobile", version.ref = "compass" }
+compass-autocomplete = { module = "dev.jordond.compass:autocomplete", version.ref = "compass" }
+compass-autocomplete-mobile = { module = "dev.jordond.compass:autocomplete-mobile", version.ref = "compass" }
+compass-permissions-mobile = { module = "dev.jordond.compass:permissions-mobile", version.ref = "compass" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
